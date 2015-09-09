@@ -1,0 +1,9 @@
+<h1>Movies</h1>
+<p><%= link_to 'New Movie', new_movie_path %></p>
+<% @movies.each do |i| %>
+ <h2><%= i.title %></h2>
+ <h3><%= i.length %></h3>
+ <p><%= i.mpaa %></p>
+ <%= link_to 'Show Movie', movie_path(i) %>
+<% end %>
+
