@@ -34,11 +34,11 @@ class MoviesController < ApplicationController
 
   def create
    @movie = Movie.new(movie_params)
-   if @movie.save
+    if @movie.save
      redirect_to movies_path
-   else
+    else
      render :new
-  end 
+    end 
   end
 
   private
