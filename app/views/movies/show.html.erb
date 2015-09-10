@@ -4,11 +4,6 @@
 <p><%= @movie.mpaa %></p>
 <%= link_to 'Back', movies_path %>
 
-<h1> Movie </h1>
- <h2><%= @movie.title %></h2>
- <h3><%= @movie.length %></h3>
- <p><%= @movie.mpaa %></p>
-
  <h1>Reviews</h1>
  <% @movie.reviews.each do |i| %>
 <div class= 'reviews'>
